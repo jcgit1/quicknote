@@ -1,0 +1,24 @@
+[package]
+name = "quicknote"
+version = "0.1.0"
+edition = "2021"
+description = "Lightweight tabbed auto-saving notepad with a collapsible custom titlebar"
+license = "MIT"
+
+[dependencies]
+egui = "=0.35.0"
+epaint = "=0.35.0"
+eframe = { version = "0.35", default-features = false, features = [
+    "default_fonts",
+    "wgpu",
+    "wayland",
+    "x11",
+    "persistence",
+] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+directories = "6"
+
+[profile.release]
+lto = true
+codegen-units = 1

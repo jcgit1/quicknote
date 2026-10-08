@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Quicknote
+Comment=Lightweight tabbed auto-saving notepad
+Exec=/home/jcain/Cursor Projects/quicknote/target/release/quicknote
+Icon=note-edit-text
+Terminal=false
+Categories=Utility;
+StartupNotify=false
+X-KDE-autostart-after=panel
